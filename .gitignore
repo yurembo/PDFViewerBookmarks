@@ -1,0 +1,6 @@
+build/
+build-*/
+CMakeLists.txt.user
+compile_commands.json
+cmake-build-*/
+bin/

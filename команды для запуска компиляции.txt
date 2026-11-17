@@ -1,0 +1,4 @@
+# команды для запуска компиляции
+1) cmake -S pdf-viewer -B pdf-viewer\build -DCMAKE_PREFIX_PATH="D:\Qt\6.12.0\msvc2022_64"
+2) cmake --build pdf-viewer\build --config Release
+3) .\pdf-viewer\build\Release\PdfBookmarkViewer.exe

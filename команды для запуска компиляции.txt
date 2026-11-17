@@ -1,4 +1,16 @@
-# команды для запуска компиляции
+# команды для запуска компиляции в Windows (в PowerShell)
 1) cmake -S pdf-viewer -B pdf-viewer\build -DCMAKE_PREFIX_PATH="D:\Qt\6.12.0\msvc2022_64"
 2) cmake --build pdf-viewer\build --config Release
 3) .\pdf-viewer\build\Release\PdfBookmarkViewer.exe
+
+# команды для запуска компиляции в Linux
+sudo apt install build-essential cmake qt6-base-dev qt6-pdf-dev
+cmake -S pdf-viewer -B pdf-viewer/build
+cmake --build pdf-viewer/build
+./pdf-viewer/build/PdfBookmarkViewer
+
+# команды для запуска компиляции в macOS
+brew install cmake qt
+cmake -S pdf-viewer -B pdf-viewer/build -DCMAKE_PREFIX_PATH="$(brew --prefix qt)"
+cmake --build pdf-viewer/build
+open pdf-viewer/build/PdfBookmarkViewer.app
